@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "LazyCsharp/1.0.6": {
+      "LazyCsharp/1.0.7": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "WebSocketSharp-netstandard": "1.0.1"
         },
         "runtime": {
           "lib/net5.0/LazyCsharp.dll": {
-            "assemblyVersion": "0.1.0.6",
-            "fileVersion": "0.1.0.6"
+            "assemblyVersion": "0.1.0.7",
+            "fileVersion": "0.1.0.7"
           }
         }
       },
@@ -37,12 +37,12 @@
     }
   },
   "libraries": {
-    "LazyCsharp/1.0.6": {
+    "LazyCsharp/1.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KRwqFmroyLc5rL6TZuNJKgUtwBfP15NYE1pogrzyMieRnInfT+WJQgKv5Q/vCaqGO+ikcUSYQ49dkvKogi6dWw==",
-      "path": "lazycsharp/1.0.6",
-      "hashPath": "lazycsharp.1.0.6.nupkg.sha512"
+      "sha512": "sha512-9l82bcD6ei/9CqOR1EXUjdIDlcoKcJBWnBnkZsj0KNKdFbcg8Y/Pl4HDH6jt9+57NqUL8Kpv3BeoifooYqRfWw==",
+      "path": "lazycsharp/1.0.7",
+      "hashPath": "lazycsharp.1.0.7.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",

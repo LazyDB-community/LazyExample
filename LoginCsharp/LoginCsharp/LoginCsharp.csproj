@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LazyCsharp" Version="1.0.6" />
+    <PackageReference Include="LazyCsharp" Version="1.0.7" />
   </ItemGroup>
 
 </Project>

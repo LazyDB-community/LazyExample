@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using LazyCsharp;
 
 namespace LoginCsharp
@@ -27,11 +15,11 @@ namespace LoginCsharp
         {
             InitializeComponent();
 
-            db = new Database("eu.indivis.cloud", 42600, delegate (Object s) {
+            db = new Database("youtproject.lazydb.com", 42600, delegate (Object s) {
                 Console.WriteLine("Good!");
             }, delegate (Object s) {
                 Console.WriteLine("Is not good!");
-            });
+            }, true);
         }
 
         private void connect(object sender, RoutedEventArgs e)
