@@ -8,21 +8,21 @@
     ".NETCoreApp,Version=v5.0": {
       "LoginCsharp/1.0.0": {
         "dependencies": {
-          "LazyCsharp": "1.0.7"
+          "LazyCsharp": "1.0.8"
         },
         "runtime": {
           "LoginCsharp.dll": {}
         }
       },
-      "LazyCsharp/1.0.7": {
+      "LazyCsharp/1.0.8": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "WebSocketSharp-netstandard": "1.0.1"
         },
         "runtime": {
           "lib/net5.0/LazyCsharp.dll": {
-            "assemblyVersion": "0.1.0.7",
-            "fileVersion": "0.1.0.7"
+            "assemblyVersion": "0.1.0.8",
+            "fileVersion": "0.1.0.8"
           }
         }
       },
@@ -50,12 +50,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "LazyCsharp/1.0.7": {
+    "LazyCsharp/1.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9l82bcD6ei/9CqOR1EXUjdIDlcoKcJBWnBnkZsj0KNKdFbcg8Y/Pl4HDH6jt9+57NqUL8Kpv3BeoifooYqRfWw==",
-      "path": "lazycsharp/1.0.7",
-      "hashPath": "lazycsharp.1.0.7.nupkg.sha512"
+      "sha512": "sha512-YCx/h4Q6dCUBVdsBMbrrFvFg4MQbJnVZBZBFxQaCT3B3WqxgLfnx/s36BtwlmvPixaSmBGkCXQnCYy9wZY08kQ==",
+      "path": "lazycsharp/1.0.8",
+      "hashPath": "lazycsharp.1.0.8.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",

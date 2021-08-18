@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "LazyCsharp/1.0.7": {
+      "LazyCsharp/1.0.8": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -36,14 +36,14 @@
     }
   },
   "libraries": {
-    "LazyCsharp/1.0.7": {
-      "sha512": "9l82bcD6ei/9CqOR1EXUjdIDlcoKcJBWnBnkZsj0KNKdFbcg8Y/Pl4HDH6jt9+57NqUL8Kpv3BeoifooYqRfWw==",
+    "LazyCsharp/1.0.8": {
+      "sha512": "YCx/h4Q6dCUBVdsBMbrrFvFg4MQbJnVZBZBFxQaCT3B3WqxgLfnx/s36BtwlmvPixaSmBGkCXQnCYy9wZY08kQ==",
       "type": "package",
-      "path": "lazycsharp/1.0.7",
+      "path": "lazycsharp/1.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lazycsharp.1.0.7.nupkg.sha512",
+        "lazycsharp.1.0.8.nupkg.sha512",
         "lazycsharp.nuspec",
         "lib/net5.0/LazyCsharp.dll",
         "logo_lazydb.png"
@@ -96,7 +96,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "LazyCsharp >= 1.0.7"
+      "LazyCsharp >= 1.0.8"
     ]
   },
   "packageFolders": {
@@ -148,7 +148,7 @@
         "dependencies": {
           "LazyCsharp": {
             "target": "Package",
-            "version": "[1.0.7, )"
+            "version": "[1.0.8, )"
           }
         },
         "imports": [
