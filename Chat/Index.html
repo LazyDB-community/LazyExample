@@ -7,10 +7,6 @@
 </head>
 <body class="bg-gray-100">
     <div id="app">
-        <div v-if="error !== ''" style="background-color: #e74c3c;" class="p-3 flex justify-center items-center flex-col shadow-md">
-            <p class="text-3xl text-white">{{ error }}</p>
-        </div>
-
         <div v-if="is_login" class="flex h-screen antialiased text-gray-800">
             <div class="flex flex-row h-full w-full overflow-x-hidden">
                 <div class="flex flex-col flex-auto h-full p-6">
@@ -91,16 +87,16 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="Index.js"></script>
+    <script src="https://lazybrowser.lazydb.com/lazydb.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
     <script>
-        const db = new Database('youtproject.lazydb.com', 42600)
+        const db = new Database('alpha.lazydb.com', your_port)
         const app = new Vue({
             el: '#app',
             data: {
                 is_login: false,
                 email: '',
                 password: '',
-                error: '',
                 username: '',
                 input: '',
                 id: 1,
@@ -109,13 +105,16 @@
             methods: {
                 login() {
                     db.connect(this.email, this.password).then((user) => {
-                        this.error = ''
                         this.is_login = true
                         this.username = user.username
 
                         this.fetchMessage()
                     }).catch((e) => {
-                        this.error = e
+						Swal.fire(
+							"Connection",
+							e,
+							"error"
+						)
                     })
                 },
                 createMessage() {
@@ -126,7 +125,11 @@
                     }), true).then(() => {
                        this.input = ''
                     }).catch((e) => {
-                       this.error = e
+						Swal.fire(
+							"Message",
+							e,
+							"error"
+						)
                     })
                 },
                 fetchMessage() {
@@ -138,7 +141,11 @@
                             this.id++
                         }
                     }).catch((e) => {
-                        this.error = e
+						Swal.fire(
+							"Message",
+							e,
+							"error"
+						)
                     })
                 }
             },
@@ -146,7 +153,11 @@
                 db.watch('create', '/messages/public').then(() => {
                     this.fetchMessage()
                 }).catch((e) => {
-                    this.error = e
+					Swal.fire(
+						"Message",
+						e,
+						"error"
+					)
                 })
             }
         })

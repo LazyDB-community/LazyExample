@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
@@ -25,24 +25,30 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="Index.js"></script>
+    <script src="https://lazybrowser.lazydb.com/lazydb.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
     <script>
-        const db = new Database('youtproject.lazydb.com', 42600)
+        const db = new Database('alpha.lazydb.com', your_port)
         const app = new Vue({
             el: '#app',
             data: {
                 email: '',
-                password: '',
-                error: ''
+                password: ''
             },
             methods: {
                 login() {
-                    db.connect(this.email, this.password).then(() => {
-                        this.error = ''
-
-                        alert('You are logged in!')
+                    db.connect(this.email, this.password).then((data) => {
+						Swal.fire(
+							"Connection",
+							"You are connected, " + data.username + "!",
+							"success"
+						)
                     }).catch((e) => {
-                        this.error = e
+						Swal.fire(
+							"Connection",
+							e,
+							"error"
+						)
                     })
                 }
             }
